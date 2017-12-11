@@ -1,6 +1,10 @@
 # AWS-Lightsail-Apache-server-on-Linux
 Linux sever for project 6 for Udacity which uses AWS Lightsail to deploy the Catalog web application with postgresql from project 4 on Apache server and enforces key-based SSH authentication.
 
+### IP 35.177.100.65
+### SSH port 2200
+### URL 35.177.65
+
 ## Technologies used
 
 1.  [AWS Lightsail Ubuntu instance](https://lightsail.aws.amazon.com/)
@@ -15,7 +19,8 @@ Linux sever for project 6 for Udacity which uses AWS Lightsail to deploy the Cat
        -`sudo ufw allow 123/udp`   
        -`sudo ufw deny 22`  
      - configured timezone  
-       -`sudo dpkg-reconfigure tzdata`  
+       -`sudo dpkg-reconfigure tzdata`
+     - set up user grader and catalog with sudo permissions
    
 2. Apache  `sudo apt-get install apache2`
     - Installed mod-wsgi to serve flask applications on Apache  
